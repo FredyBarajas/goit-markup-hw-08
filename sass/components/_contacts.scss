@@ -1,6 +1,9 @@
 .contacts {
-  padding-top: 5px;
+  //padding-top: 5px; no movil//
+  visibility: hidden; //
   @include flex(row, center, baseline);
+  height: 0px;
+  //movil//
   &__item {
     @extend .nav__item;
   }

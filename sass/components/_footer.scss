@@ -1,22 +1,31 @@
 .footer {
   @extend .section;
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: getColor(primary);
-  color:getcolor(secondary) &__studio {
+  color: getcolor(secondary);
+  &__studio {
     color: getColor(secondary);
   }
 
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__adress {
     color: white;
     font-style: normal;
     margin-top: 6px;
     line-height: 2em;
+    text-align: center; //movil//
   }
   &__title {
     color: getColor(secondary);
     margin-bottom: 20px;
     font-weight: 700;
+    text-align: center; //movil//
   }
   &__icon {
     fill: white;
@@ -24,6 +33,7 @@
   }
   &__form {
     display: flex;
+    flex-direction: column; //movil//
     align-items: flex-end;
   }
   &__label {
@@ -31,6 +41,7 @@
     flex-direction: column;
     color: getColor(secondary);
     font-weight: 700;
+    text-align: center; //movil//
   }
   &__studio {
     color: getColor(secondary);
@@ -101,7 +112,8 @@
 .footer__button {
   @extend .button;
   padding: 10px 28px 10px 39px;
-  margin-left: 12px;
+  //margin-left: 12px; no movil//
+  margin-top: 20px;
 }
 
 .footer__icon-send {

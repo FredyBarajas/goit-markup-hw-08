@@ -1,9 +1,12 @@
 .nav {
-  @include margin(0, 300px, 0, 93px);
-  padding-top: 10px;
+  visibility: hidden; //movil//
+  //@include margin(0, 300px, 0, 93px);no movil//
+  //padding-top: 10px; no movil//
+  height: 0;
 }
 
 .nav__item {
+  height: 0;
   margin: 0;
 
   &:not(:last-child) {
@@ -11,6 +14,7 @@
   }
 }
 .nav__link {
+  height: 0;
   font-weight: 500;
   text-decoration: none;
   line-height: 1.17em;
@@ -30,14 +34,15 @@
 
 .nav__active {
   color: getColor(selected);
+  height: 0;
 
   &::after {
     content: '';
-    height: 4px;
+    height: 0; //movil//
     width: 100%;
     background-color: getColor(selected);
     display: block;
     border-radius: 50px;
-    margin-top: 32px;
+    margin-top: 0; //movil//
   }
 }

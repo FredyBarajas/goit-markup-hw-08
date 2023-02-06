@@ -9,12 +9,19 @@
     margin-bottom: 50px;
   }
   &--top {
-    padding-top: 94px;
+    padding-top: 60px;
+    //padding-top: 94px; no movil//
   }
   &--bottom {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+    //padding-bottom: 94px; no movil//
   }
   &--color {
     background-color: getColor(tertiary);
   }
+}
+
+.section--hidden {
+  visibility: hidden; //movil - tablet//
+  height: 0; //movil - tablet//
 }

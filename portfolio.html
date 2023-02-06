@@ -16,9 +16,122 @@
       rel="stylesheet"
     />
   </head>
+  </head>
   <body class="body">
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop__modal">
+        <form name="contacts" class="form">
+          <h3 class="form__title">
+            Deje sus datos, nos contactaremos con usted
+          </h3>
+          <label class="form__label">
+            Nombre
+            <svg class="form__icon" width="18" height="25">
+              <use href="./images/icons.svg#icon-Human"></use>
+            </svg>
+            <input name="name" type="text" class="form__input" autofocus />
+          </label>
+          <label class="form__label">
+            Teléfono
+            <svg class="form__icon" width="25" height="25">
+              <use href="./images/icons.svg#icon-form-phone"></use>
+            </svg>
+            <input name="tel" type="tel" class="form__input" />
+          </label>
+          <label class="form__label">
+            E-mail
+            <svg class="form__icon" width="25" height="25">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            <input name="mail" type="email" class="form__input" />
+          </label>
+          <label class="form__label">
+            Comentarios
+            <textarea
+              name="feedback"
+              rows="5"
+              placeholder="Introduzca el texto"
+              class="form__textarea"
+            ></textarea>
+          </label>
+          <label class="form__check">
+            <input type="checkbox" name="acept" class="form__custom-checkbox" />
+            <p>
+              Estoy de acuerdo con el boletín informativo y acepto los Términos
+              y Condiciones
+            </p>
+          </label>
+          <button type="submit" class="form__button">Enviar</button>
+        </form>
+        <a href="" class="form__close" data-modal-close>
+          <svg width="10" heiht="10">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" heiht="24">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div>
+        <ul class="mobile-menu">
+          <li><a href="index.html" class="mobile-menu__link">Estudio</a></li>
+          <li>
+            <a href="./portfolio.html" class="mobile-menu__link">Portafolio</a>
+          </li>
+          <li><a href="" class="mobile-menu__link">Contactos</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="list Mobile-menu_contacts">
+          <li class="mobile-menu_tel">
+            <a class="contacts__link" href="tel:+525555296000">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu_mail">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list mobile-menu_socials">
+          <li class="mobilie-menu__box">
+            <a href="" class="mobile-menu__footer">Instagram</a>
+          </li>
+          <li class="mobilie-menu__box">
+            <a href="" class="mobile-menu__footer">Twitter</a>
+          </li>
+          <li class="mobilie-menu__box">
+            <a href="" class="mobile-menu__footer">Facebook</a>
+          </li>
+          <li class="mobilie-menu__box">
+            <a href="" class="mobile-menu__footer">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <header class="header container">
-      <ul class="list header__list">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <ul class="header__list">
         <li>
           <a href="" class="logo">Web<span class="studio">Studio</span></a>
         </li>
@@ -26,12 +139,10 @@
           <nav class="nav">
             <ul class="list">
               <li class="nav__item">
-                <a class="nav__link" href="index.html">Estudio</a>
+                <a class="nav__link nav__active" href="index.html">Estudio</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link nav__active" href="./portfolio.html"
-                  >Portafolio</a
-                >
+                <a class="nav__link" href="./portfolio.html">Portafolio</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#footer">Contactos</a>
@@ -63,20 +174,20 @@
     </header>
     <main class="main">
       <section class="section section--bottom section--top">
-        <ul class="list container">
-          <li class="">
+        <ul class="list list-btn container">
+          <li class="btn">
             <button type="button" class="button-portfolio">Todo</button>
           </li>
-          <li class="list-btn">
+          <li class="btn">
             <button type="button" class="button-portfolio">Sitios-web</button>
           </li>
-          <li class="list-btn">
+          <li class="btn">
             <button type="button" class="button-portfolio">Aplicaciones</button>
           </li>
-          <li class="list-btn">
+          <li class="btn">
             <button type="button" class="button-portfolio">Diseño</button>
           </li>
-          <li class="list-btn">
+          <li class="btn">
             <button type="button" class="button-portfolio">Marketing</button>
           </li>
         </ul>
@@ -295,10 +406,10 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+        <footer class="footer">
       <ul class="container list list--between">
         <li>
-          <div>
+          <div class="footer__logo">
             <a href="" class="logo"
               >Web<span class="footer__studio">Studio</span></a
             >
@@ -321,7 +432,7 @@
         <li>
           <div>
             <p class="footer__title">ENCUENTRENOS EN</p>
-            <ul class="list">
+            <ul class="list list--icons">
               <li class="footer__social">
                 <a href="" class="footer__icon">
                   <svg width="20px" height="20px">
@@ -374,5 +485,6 @@
         </li>
       </ul>
     </footer>
+    <script src="./movile-menu.js"></script>
   </body>
 </html>

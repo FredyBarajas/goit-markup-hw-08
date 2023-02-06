@@ -1,16 +1,33 @@
 .list {
   list-style: none;
   display: flex;
+  flex-direction: column; //movil//
   margin: 0;
   padding: 0;
   justify-content: center;
+  align-items: center;
+  //movil//
+  row-gap: 30px;
 
   &--between {
-    justify-content: space-between;
+    justify-content: center; //movil//
+    row-gap: 60px; //movil//
+    // justify-content: space-between;no movil//
+  }
+
+  &--icons {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .list-btn {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.btn {
   margin-left: 8px;
   &:first {
     margin-left: 0;

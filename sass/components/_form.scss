@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding: 38.5px 39px 41.5px 41px;
+  padding: 40px;
   align-items: center;
   &__title {
     font-size: 20px;
@@ -33,6 +33,7 @@
     padding-left: 12px;
   }
   &__check {
+    appearance: none;
     display: flex;
     padding-left: 13px;
     padding-right: 12px;
@@ -80,6 +81,7 @@
 }
 
 .form__custom-checkbox {
+  appearance: none;
   display: flex;
   position: relative;
   outline: none;
