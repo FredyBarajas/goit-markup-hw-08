@@ -1,5 +1,10 @@
 .container {
-  min-width: 480px;
+  min-width: 460px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  width: 95%;
+  direction: flex;
+  align-items: center;
+  justify-items: center;
 }

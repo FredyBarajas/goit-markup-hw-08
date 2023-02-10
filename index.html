@@ -116,20 +116,6 @@
     </div>
 
     <header class="header container">
-      <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
       <ul class="header__list">
         <li>
           <a href="" class="logo">Web<span class="studio">Studio</span></a>
@@ -168,6 +154,22 @@
               >
             </li>
           </ul>
+        </li>
+        <li>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </li>
       </ul>
     </header>
@@ -275,7 +277,7 @@
       <section class="section section--color section--bottom section--top">
         <h2 class="section__title">Nuestro Equipo</h2>
         <div class="section-container">
-          <ul class="list">
+          <ul class="list container">
             <li class="card-member">
               <img
                 class="image"
@@ -451,7 +453,7 @@
       <!-- main clients section -->
       <section class="section section--bottom section--top">
         <h2 class="section__title">Clientes Regulares</h2>
-        <ul class="container list list--icons">
+        <ul class="container list list-clients">
           <li class="card-client">
             <a href="" class="card-client__icon">
               <svg width="106" height="52">

@@ -2,29 +2,36 @@
   list-style: none;
   display: flex;
   flex-direction: column; //movil//
-  margin: 0;
-  padding: 0;
   justify-content: center;
   align-items: center;
   //movil//
-  row-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
 
   &--between {
     justify-content: center; //movil//
-    row-gap: 60px; //movil//
+    gap: 60px; //movil//
     // justify-content: space-between;no movil//
   }
 
   &--icons {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0;
   }
+}
+
+.list-clients {
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .list-btn {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  row-gap: 8px;
+  column-gap: 0;
 }
 
 .btn {

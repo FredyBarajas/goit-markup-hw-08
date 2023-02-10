@@ -16,7 +16,6 @@
       rel="stylesheet"
     />
   </head>
-  </head>
   <body class="body">
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__modal">
@@ -117,20 +116,6 @@
     </div>
 
     <header class="header container">
-      <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
       <ul class="header__list">
         <li>
           <a href="" class="logo">Web<span class="studio">Studio</span></a>
@@ -170,6 +155,22 @@
             </li>
           </ul>
         </li>
+        <li>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </li>
       </ul>
     </header>
     <main class="main">
@@ -191,7 +192,7 @@
             <button type="button" class="button-portfolio">Marketing</button>
           </li>
         </ul>
-        <ul class="grid container">
+        <ul class="container grid">
           <li class="card-portfolio">
             <a href="" class="card-portfolio__link">
               <div class="card-portfolio__img">
@@ -406,7 +407,7 @@
         </ul>
       </section>
     </main>
-        <footer class="footer">
+    <footer class="footer">
       <ul class="container list list--between">
         <li>
           <div class="footer__logo">
