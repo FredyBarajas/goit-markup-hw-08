@@ -1,5 +1,5 @@
 .banner {
-  background-image: url(../images/fondo_480.jpg);
+  background-image: url(../images/fondomovil.jpg);
   background-size: cover;
   width: 100%;
   border: none;
@@ -26,5 +26,12 @@
     height: 100%;
     top: 0;
     z-index: 0;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/fondomovil@x2.jpg);
   }
 }

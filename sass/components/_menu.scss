@@ -8,6 +8,7 @@
 @media (max-width: 767px) {
   .menu {
     display: none;
+    position: fixed;
   }
 }
 
@@ -31,11 +32,12 @@
   align-items: center;
   justify-content: center;
   background-color: getColor(secondary);
-
+  right: 16px;
+  top: 15px;
   width: 30px;
   height: 30px;
   fill: getColor(accent);
-
+  position: absolute;
   margin: 0;
   padding: 0;
 
@@ -56,6 +58,7 @@
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
+    position: fixed;
   }
 }
 

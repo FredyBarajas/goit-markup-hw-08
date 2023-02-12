@@ -1,20 +1,13 @@
 .header {
-  @include padding(16px, 15px, 16px, 15px); //movil//
-
-  align-items: baseline;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
 
   &__list {
+    flex-wrap: nowrap;
     list-style: none;
     display: flex;
-    flex-direction: row; //movil//
-    margin: 0;
-    padding: 0;
     justify-content: space-between;
-
-    //movil//
-
-    padding-left: 0;
-    border-left: 0;
   }
 }
 

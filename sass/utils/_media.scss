@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
   .list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,13 +11,15 @@
 
   .header {
     padding-bottom: 0;
-    padding-top: 21px;
+    padding-top: 0px;
   }
   .header__list {
     justify-content: space-between;
+    align-items: center;
   }
   .nav {
     display: flex;
+    padding-top: 50px;
   }
 
   .menu-container {
@@ -25,9 +31,8 @@
   }
 
   .banner {
-    background-image: url(../images/fondo.png);
+    background-image: url(../images/fondo.jpg);
   }
-
   .card-advantage {
     width: 45%;
   }
@@ -67,6 +72,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
   .list {
     flex-wrap: nowrap;
   }
@@ -77,11 +85,9 @@
   .section--bottom {
     padding-bottom: 94px;
   }
-  .header {
-    padding-top: 32px;
-  }
   .contacts {
     display: flex;
+    padding-top: 26px;
   }
 
   .banner {
@@ -120,5 +126,19 @@
   .footer__email {
     width: 358px;
     margin-right: 10px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/fondo@x2.jpg);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .menu-container {
+    display: none;
   }
 }

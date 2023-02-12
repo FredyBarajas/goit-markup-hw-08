@@ -122,12 +122,14 @@
         </li>
         <li>
           <nav class="nav">
-            <ul class="list">
+            <ul class="list list--nogap">
               <li class="nav__item">
-                <a class="nav__link nav__active" href="index.html">Estudio</a>
+                <a class="nav__link" href="index.html">Estudio</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="./portfolio.html">Portafolio</a>
+                <a class="nav__link nav__active" href="./portfolio.html"
+                  >Portafolio</a
+                >
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#footer">Contactos</a>
@@ -145,7 +147,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="contacts">
+            <li class="contacts__item">
               <a class="contacts__link" href="tel:+525555296000">
                 <svg width="30px" height="15px">
                   <use href="./images/icons.svg#icon-phone"></use>
@@ -155,23 +157,21 @@
             </li>
           </ul>
         </li>
-        <li>
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-        </li>
       </ul>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </header>
     <main class="main">
       <section class="section section--bottom section--top">
